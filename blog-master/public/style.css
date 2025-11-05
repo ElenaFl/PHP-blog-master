@@ -1,0 +1,17 @@
+body {
+    padding: 50px;
+    background: rgb(182, 255, 255);
+    font-size: 20px;
+    color: rgb(1, 101, 108);
+}
+
+.nav a {
+    font-size: 26px;
+    color: rgb(0, 135, 145);
+    margin-right: 20px;
+}
+
+a {
+    font-size: 22px;
+    color: rgba(0, 134, 144, 0.676);
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<?php include __DIR__ . '/../parts/menu.phtml';?>
+<?php if (!empty($posts)):?>
+    <h3 style="text-decoration: underline; text-underline-offset: 0.2em; text-decoration-style: dotted;  text-decoration-color: #06a99cff;">Посты:</h3>
+    <?php foreach ($posts as $post): ?>
+    <div>
+        <a href="?page=post&id=<?= htmlspecialchars($post['id']) ?>">
+            <b><?=$post['title']; ?></b></a><br><br>
+    </div>
+    <?php endforeach; ?>
+    <?php else:?>
+    <p>Нет постов</p>
+<?php endif;?>
+</body>
+</html>
+
