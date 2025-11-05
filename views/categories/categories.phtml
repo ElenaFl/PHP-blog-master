@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<?php include __DIR__ . '/../parts/menu.phtml';?>
+    <h2>Категории</h2>
+    <?php foreach ($categories as $category): ?>
+    <div>
+        <a href="?page=category&id=<?= htmlspecialchars($category['id']) ?>"><b><?=htmlspecialchars($category['name']) ?></b></a><br><br>
+    </div>
+    <?php endforeach;?>
+</body>
+</html>
